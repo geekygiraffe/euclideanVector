@@ -90,6 +90,9 @@ xlabel('Time');
 ylabel('Position');
 legend('Point 1','Point 2','Point 3','Point 4');
 hold off
+% saves graph to a .tif file for manuscrip submission
+
+print -dtiff Two Dimension Line.tif
 %*opportunity to create conditional statement to select the three points to
 %*be used to define the plane
 %*filter 
@@ -134,8 +137,7 @@ else
     ylabel('Y axis');
     zlabel('Z axis');
     hold off
-    
-    print -dtiff figureTrunk.tif
+
 
     %Right Arm
     figure(03)
